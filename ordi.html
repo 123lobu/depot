@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ordinateurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+  <style>
+        /* responsive de mon projet */
+        @media (max-width:630px) {
+            
+          .tele__presentation-beater{
+            flex-direction: column;
+            /* align-items: center; */
+            /* text-align: center; */
+           height: 80%;
+          }
+          .tele___flex{
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+          }
+          .card-liste{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            
+            gap: 8px;
+            top: 20px;
+          } 
+          .tele--img img {
+            position: relative;
+            top: 6px;
+          }
+          .footer{
+            position: relative;
+            top: 20px;
+          }
+          .tele__recher{
+            position: relative;
+            top: 40px;
+            left: 0px;
+            /* width: 100%; */
+          }
+          .tele_tele--a   a{
+            position: relative;
+            top: 0px;
+            left: 120px;
+            text-align: end;
+            font-size: 12px;
+            display: flex;
+            height: 25%;
+          }
+          .tele__recher input{
+            padding: 5px;
+            border-radius: 4px;
+          }
+          .tele_sect-h3{
+            position: relative;
+            top: -45px;
+            
+          }
+          .tele_tele--a a{
+            position: relative;
+            top: -40px;
+          }
+          .unisue__h3, #unisue__h3{
+            position: relative;
+            right: -26px;
+          }
+          #jamais-hp{
+            position: relative;
+            left: 0px;
+          }
+        }
+      </style>
+     
+ <div class="whatsapp-icon-container">
+        <a href="https://wa.me/243847816788"><img src="img/Icônes de Whatsapp.jpg" class="whatsapp-icon" alt=""></a>
+  </div>
+
+    <div class="tele__techh">
+        <h2 class="tele__tech__h2"> Mobil_ <span>tech</span></h2>
+        
+    </div>
+    
+    
+    <div class="tele__presentation-beater">
+        <div class="tele___flex">
+            <div class="tele--img">
+                <img src="img/ordi.jpg" alt="">
+                
+            </div>
+            <div class="tele__texte">
+                <h3>ravis de vous accueillier</h3> <br>
+                <p class="tele__p__1">
+                    
+                    notre boutique en ligne nommer Mobil_tech dediéé au passionner <br>
+                    dela technologie et aux amateurs de téléphones mobiles <br>
+                    <span>vous etes au bonnes endroits</span>
+                </p>
+
+                <div class="tele__recher">
+                    <input type="search" placeholder="Recherche/..."><i class='bx bx-search' id="tele_--reche"></i>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <div class="select__tele">
+        
+        <div class="select__tele--flex">
+            <div class="tele_sect-h3">
+                <h3 class="unisue__h3">DELL</h3>
+            </div>
+            <div class="tele_tele--a">
+                <a href="dell.html" class="tetele__voir">plus</a>
+            </div>
+            
+
+            
+            <div class="select-tele___flex1">
+                
+                <div class="select-tele___flex23">
+                    <i class='bx bx-list-ul'></i> 
+                    <i class='bx bx-grid-alt'></i> 
+                    <i class='bx bx-grid-small'></i>
+                </div> <br> <br>
+              
+                <form action="" class="tele__form">
+                    <select class="select_en-question">
+                        <option>trier...par</option>
+                        <option>tri par defaut</option>
+                        <option>tri par popularité</option>
+                        <option>tri du plus ancien au plus récent</option>
+                        <option>trie de A a Z</option>
+                        <option>tri de Z a A</option>
+
+                    </select>
+                </form>
+                
+                
+                    
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+
+
+
+  <!-- <div class="container"> -->
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒<span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <div class="cart-panel" id="cartPanel">
+      <h2>Votre Panier <br></h2> 
+      <div id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: 0$</div>
+      <div class="cart-actions">
+            <button class="cart-btn close-btn" onclick="toggleCart()">Fermer</button> 
+            <!-- <button class="cart-btn checkout-btn">Commander</button> -->
+            <a href="commender.html" class="cart-btn checkout-btn"> commander</a> 
+            
+        
+      </div>
+    </div>
+
+    <div class="alert" id="alert">Vous venez d'ajouter un article</div>
+
+    <div class="card-liste">
+      <div class="card">
+        <img  src="img/ORDINA 2.jpg" class="pianaimages" alt="dell G5 I3">
+        <h4 class="card--title">dell G5 I3</h4>
+        <div class="card-price">
+          <div class="price">435$</div>
+          <button class="button1" onclick="ajouterAuPanier('dell G5 I3', 435, 'img/ORDINA 2.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="img/ORDINA 3.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">340 G8 I5</h4>
+        <div class="card-price">
+          <div class="price">500$</div>
+          <button class="button1" onclick="ajouterAuPanier('340 G8 I5', 500, 'img/ORDINA 3.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/ORDINA 4.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">DELL 435 G5 I4</h4>
+        <div class="card-price">
+          <div class="price">280$</div>
+          <button class="button1" onclick="ajouterAuPanier('HP 435 G5 I4', 280, 'img/ORDINA 4.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/ORDINA 5.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">453 DELL I4</h4>
+        <div class="card-price">
+          <div class="price">340$</div>
+          <button class="button1" onclick="ajouterAuPanier('453 DELL I4', 10, 'img/ORDINA 5.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">30$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 30, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/ORDINA 5.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">DELL 840 G3 I3</h4>
+        <div class="card-price">
+          <div class="price">390$</div>
+          <button class="button1" onclick="ajouterAuPanier('DELL 840 G3 I3', 390, 'img/ORDINA 5.jpg')">Ajouter</button>
+        </div>
+      </div>
+       <div class="card">
+        <img src="img/ORDINA 7 LEN.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">DELL G4 I7</h4>
+        <div class="card-price">
+          <div class="price">2300$</div>
+          <button class="button1" onclick="ajouterAuPanier('DELL G4 I7', 2300, 'img/ORDINA 7 LEN.jpg')">Ajouter</button>
+        </div>
+      </div>
+       <div class="card">
+        <img src="img/ORDINA 8.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">450 G4 I3</h4>
+        <div class="card-price">
+          <div class="price">140$</div>
+          <button class="button1" onclick="ajouterAuPanier('450 G4 I3', 140, 'img/ORDINA 8.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/ORDINA 10.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">DELL I3 </h4>
+        <div class="card-price">
+          <div class="price">250$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 250, 'img/ORDINA 10.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/ORDINA 9.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">DELL 340 G3 I4 </h4>
+        <div class="card-price">
+          <div class="price">430$</div>
+          <button class="button1" onclick="ajouterAuPanier('DELL 340 G3 I4 ', 340, 'img/ORDINA 9.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="img/ORDINATEURS 6.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">DELL 430 I5</h4>
+        <div class="card-price">
+          <div class="price">385$</div>
+          <button class="button1" onclick="ajouterAuPanier('DELL 430 I5', 385, 'img/ORDINATEURS 6.jpg')">Ajouter</button>
+        </div>
+      </div>
+     <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateur dell</h4>
+        <div class="card-price">
+          <div class="price">15$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateur dell', 15, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+    </div>
+   
+    <div class="tele__infinix_contente">
+        <div class="flex__infinix-chose">
+            <h2 class="infinix-tele_h2" id="unisue__h3">lenovo</h2>
+            <a href="lenovo.html" class="infinix--a">voirs plus</a>
+        </div>
+    </div>
+    <div class="card-liste">
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+       <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+        <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+            <h3>Pas disponibles</h3>
+          <div class="price">85$</div>
+          
+          <!-- <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button> -->
+        </div>
+        
+    </div>
+<br><br>    
+    
+    <div class="select__tele--flex111"> <br><br>
+        <div class="tele_sect-h3">
+            <h3>HP</h3>
+        </div>
+        <div class="tele_tele--a">
+            <a href="hp.html" class="tetele__voir" id="jamais-hp"> voirs plus</a>
+            <a href="#" class="tetele__voir">--HP</a>
+             
+        </div>
+            
+            
+    </div><br><br><br>
+
+
+    <div class="card-liste">
+      
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="charg-ordinateurs.jpg" class="pianaimages" alt="itel Vision 3 Plus">
+        <h4 class="card--title">chargeurs-ordinateurs</h4>
+        <div class="card-price">
+          <div class="price">10$</div>
+          <button class="button1" onclick="ajouterAuPanier('chargeurs-ordinateurs', 10, 'charg-ordinateurs.jpg')">Ajouter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img  src="ITEL A70.jpg" class="pianaimages" alt="itel A05S">
+        <h4 class="card--title">itel A05S</h4>
+        <div class="card-price">
+          <div class="price">85$</div>
+          <button class="button1" onclick="ajouterAuPanier('itel A05S', 85, 'ITEL A70.jpg')">Ajouter</button>
+        </div>
+    </div>
+   
+
+  
+
+
+   
+
+
+
+
+ 
+
+   
+
+         
+        
+<section class="footer">
+        <div class="boxx-containers">
+            <div class="boxx1">
+                <h3> Mobiltech </h3><br> 
+                <p class="mobile--p">
+                
+                    Nous sommes ouvert <br> touts les jours des 8H---20h <br>
+
+
+                </p>
+                <div class="share">
+                    <i class='bx bxl-facebook' id="share1"></i>
+                    <i class='bx bxl-twitter' id="share2"></i>
+                    <i class='bx bxl-instagram' id="share3"></i>
+                    <i class='bx bxl-tiktok' id="share4"></i>
+                </div>
+            </div>
+
+
+            <div class="boxx2">
+                <h3> contact</i></h3>  </i><br><br>
+
+                <div class="cont__est">
+                    <i class='bx bx-phone'></i></i>0847-816-788 <br>
+                    <i class='bx bx-phone'></i></i>+234  <br>
+                    </i>Mobil_tech@gmail.com<br>
+
+                </div> 
+              
+            
+            </div>
+
+
+            <div class="boxx3">
+                <h3> Quick links</i></h3>  <br>
+                <div class="linsk---partie">
+            
+                    <a href="tele.html"><i class='bx bx-right-arrow-alt' id="links___1">A propos</i></a> <br>
+                    <a href="tele.html"><i class='bx bx-right-arrow-alt' id="links___2">accueil</i></a> <br>
+                    <a href="tele.html"><i class='bx bx-right-arrow-alt' id="links___3">accessoires</i></a> <br>
+                
+                
+                    
+                </div>    
+            </div>
+
+
+
+            <div class="boxx4">
+                <h3> Besoin d'aide</i></h3>  <br> <br> <br>
+                <p class="boxx4__P">laiser votre adresse  Gmail ici </p>
+                <input type="email" class="email" placeholder="votre gmail ici svp">
+                <input type="submit" value="envoyer" class="BBTn">
+                <div class="classe-payement-groupes"> <br> 
+                    <img src="paypal.jpg" class="payement-img" alt="">
+                    <img src="equity.jpg" class="payement-img" alt="">
+                    <img src="fistbank.jpg" class="payement-img" alt="">
+                    <img src="visa.jpg" class="payement-img" alt="">
+                </div>
+
+
+            </div>
+        </div> 
+
+        <hr/>
+        <div class="copyright_de_mon_footer"><br> <br> 
+            <p>&copy;  2025<span> Henock Lobu</span>. Tous droits réservés.</p>
+        </div>
+        <br> 
+        
+</section>
+  </div>
+  <script src="ordi.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> a propos de nous </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <style>
+        body{
+            padding: 3px 6%;
+        }
+        .apropos--flex__h2{
+            font-size: 2.2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background-color: rgb(143, 170, 170);
+            padding: 12px;
+
+        }
+         .apropos--flex__img222 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+            margin-top: 20px;
+         }
+         #img--apros-the {
+            width: 100%;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+        .apropos--flex__img222 img{
+            width: 90%;
+            height: 30%;
+            border-radius: 29px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .apropos--flex__p33{
+            text-align: center;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 40px;
+        }
+        .apropos--flex__h2Za span{
+            color: rgb(255, 230, 0);
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            border-bottom: 2px solid rgb(255, 230, 0);
+        }
+        .apropos--flex__h2Za{
+           
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .apropos--flex__h42{
+            font-size: 1.1rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: #968e8e;
+            margin-bottom: 10px;
+        }
+        .apropos--flex__para{
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 2.8;
+            font-weight: bold;
+        }
+        #apropos--flex__question{
+            font-size: 1.4rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            flex-wrap: wrap;
+        }
+        .APPOPO--esr{
+            font-size: 2rem;
+            color: #ffffff;
+            margin-top: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            border-bottom: 2px solid rgb(255, 230, 0);
+            bottom: 10px;
+        }
+        .apropos--flex__para21{
+            justify-content: end;
+            color: #968e8e;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            border-right: 20px solid rgb(255, 230, 0);
+            padding-left: 20px;
+        }
+        .whatsapp-icon-container{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            margin-top: 30%;
+        }
+       .whatsapp-icon{
+           width: 60px;
+           height: 60px;
+           border-radius: 50%;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+         .whatsapp-icon:hover{
+              transform: scale(1.6);
+              transition: transform 0.7s ease;
+         }
+         /* body{
+    overflow-x: hidden;
+} */
+
+ @media screen and (max-width: 400px) {
+            .apropos--flex__img222 {
+                display: flex;
+                align-items: center;
+            }
+            #img--apros-the {
+                width: 70%;
+                height: 40%;
+            }
+              .apropos--flex__h2Za{
+                font-size: 12px;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+}
+         @media screen and (max-width: 930px) {
+            .apropos--flex__img222 {
+                flex-direction: column;
+                align-items: center;
+            }
+            #img--apros-the {
+                width: 50%;
+                height: 50%;
+            }
+            .apropos--flex__p33 {
+                padding: 20px;
+                font-size: 12px;
+            }
+            .apropos--flex__para21 {
+                padding-left: 0;
+                text-align: center;
+            }
+            .apropos--flex__h2, .apropos--flex__h2Za{
+                font-size: 15px;
+                flex-wrap: wrap;
+            }
+          
+            .apropos--flex{
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                line-height: 1.2;
+            }
+            .footer---id--fo{
+                
+                flex-direction: column;
+                font-size: 16px;
+            }
+           
+            .footer{
+                display: none;
+            }
+            .apropos--flex__para21, #apropos--flex__question{
+                font-size: 18px;
+                line-height: 1.5;
+                padding: 6px;
+            }
+         }
+
+    </style>
+
+
+    <div  class="apropos--flex">
+        <h2 class="apropos--flex__h2" > A propos de nous</h2>
+
+
+        <div class="apropos--flex__img222">
+            <img src="img/a propos.jpg" id="img--apros-the" alt="">
+            <img src="img/livraison.jpg"  id="img--apros-the" alt="">
+        </div>
+
+        <div class="apropos--flex__p33">
+            <h2  class="apropos--flex__h2Za" > À propos de  Mobil --   <span>tech</span></h2>
+            <h4 class="apropos--flex__h42">a propos de nous</h4>
+            <p class="apropos--flex__para">qui sommes nous ?</p>
+
+            <p id="apropos--flex__question">
+                Nous sommes une plateforme de E-commerce conviviale et sécurisée, dans la vente <br>
+                 des produits et gadgets électroniques.
+                MObil tech est un marché en ligne qui met en relation des vendeurs et des acheteurs
+            </p>
+            <h1 class="APPOPO--esr">Notre mission </h1>
+            <p class="apropos--flex__para21">
+              
+                Notre mission est de fournir une expérience d'achat en ligne exceptionnelle, en offrant une large gamme  <br>
+                 de produits électroniques de haute qualité à des prix compétitifs.
+                Nous nous engageons à garantir la satisfaction de nos clients en leur  <br>
+                offrant un service client réactif et des options de livraison rapides et fiables.
+                Chez Mobil_tech, nous croyons que la technologie devrait être accessible à tous.
+            </p>
+            <!-- <i class='bx bxl-whatsapp-square' ></i> -->
+        </div>
+        <!-- <div class="paranoyia">
+            <img src="img/Shop matters.jpg" alt="" class="paranoyia__img">
+        </div> -->
+    </div>
+
+
+    <div class="whatsapp-icon-container">
+        <a href="https://wa.me/243847816788"><img src="img/Icônes de Whatsapp.jpg" class="whatsapp-icon" alt=""></a>
+    </div>
+     <section class="footer" id="footer---id--fo">
+        <div class="boxx-containers">
+            <div class="boxx1">
+                <h3> Mobiltech </h3><br> 
+                <p class="mobile--p">
+                
+                    Nous sommes ouvert <br> touts les jours des 8H---20h <br>
+
+
+                </p>
+                <div class="share">
+                    <i class='bx bxl-facebook' id="share1"></i>
+                    <i class='bx bxl-twitter' id="share2"></i>
+                    <i class='bx bxl-instagram' id="share3"></i>
+                    <i class='bx bxl-tiktok' id="share4"></i>
+                </div>
+            </div>
+
+
+            <div class="boxx2">
+                <h3> contact</i></h3>  </i><br><br>
+
+                <div class="cont__est">
+                    <i class='bx bx-phone'></i></i>0847-816-788 <br>
+                    <i class='bx bx-phone'></i></i>+234  <br>
+                    </i>Mobil_tech@gmail.com<br>
+
+                </div> 
+              
+            
+            </div> 
+
+
+            <div class="boxx3">
+                <h3> Quick links</i></h3>  <br>
+                <div class="linsk---partie">
+            
+                    <a href="index.html"><i class='bx bx-right-arrow-alt' id="links___1">A propos</i></a> <br>
+                    <a href="index.html"><i class='bx bx-right-arrow-alt' id="links___2">accueil</i></a> <br>
+                    <a href="index.html"><i class='bx bx-right-arrow-alt' id="links___3">accessoires</i></a> <br>
+                
+                
+                    
+                </div>    
+            </div>
+
+
+
+            <!-- <div class="boxx4">
+                <h3> Besoin d'aide</i></h3>  <br> <br> <br>
+                <p class="boxx4__P">laiser votre adresse  Gmail ici </p>
+                <input type="email" class="email" placeholder="votre gmail ici svp">
+                <input type="submit" value="envoyer" class="BBTn">
+                <div class="classe-payement-groupes"> <br> 
+                    <img src="paypal.jpg" class="payement-img" alt="">
+                    <img src="equity.jpg" class="payement-img" alt="">
+                    <img src="fistbank.jpg" class="payement-img" alt="">
+                    <img src="visa.jpg" class="payement-img" alt="">
+                </div>
+
+
+            </div> --> -->
+        </div> 
+
+        <hr/>
+        <div class="copyright_de_mon_footer"><br> <br> 
+            <p>&copy;  2025<span> Henock Lobu</span>. Tous droits réservés.</p>
+        </div>
+        <br> 
+        
+    </section>
+
+   
+    
+</body>
+</html>
